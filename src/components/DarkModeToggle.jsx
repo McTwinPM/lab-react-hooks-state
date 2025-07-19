@@ -19,15 +19,6 @@ const DarkModeToggle = ({darkMode, setDarkMode}) => {
         Toggle {darkMode ? 'Light' : 'Dark'} Mode
       </button>
       </div>
-    // <div style={{ 
-    //   backgroundColor: darkMode? 'black' : 'white',
-    //   color: darkMode ? 'white' : 'black',
-    //   }}>
-    
-    // <button class= "darkModeButton" onClick={() => setDarkMode(!darkMode)}> Toggle Dark Mode</button>
-    // </div>
-
-    
   )
 }
 
