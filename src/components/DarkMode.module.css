@@ -1,0 +1,21 @@
+/* TODO (optional): Define styles for dark mode */
+
+/* TODO (optional): Ensure text and background colors adjust for dark mode */
+body {
+  --color-background: #fafafa;
+  --color-foreground: #1f2023;
+}
+body.dark-mode {
+  --color-background: #1f2023;
+  --color-foreground: #efefef;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+  --color-background: #1f2023;
+  --color-foreground: #efefef;
+  }
+}
+.App-header {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}

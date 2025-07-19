@@ -1,10 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const DarkModeToggle = () => {
+import './DarkMode.module.css'
+
+const DarkModeToggle = ({darkMode, setDarkMode}) => {
   // TODO: Implement dark mode toggle logic
+  const handleToggle = () => {
+    setDarkMode(!darkMode)
+  }
+    
+    
 
   return (
-    <button>Toggle Dark Mode {/* TODO: Update this text from Dark to Light dynamically */}</button>
+    <div className={darkMode ? 'dark-mode' : 'light-mode'}>
+      <button 
+        className="darkModeButton" 
+        onClick={handleToggle}
+      >
+        Toggle {darkMode ? 'Light' : 'Dark'} Mode
+      </button>
+      </div>
+    // <div style={{ 
+    //   backgroundColor: darkMode? 'black' : 'white',
+    //   color: darkMode ? 'white' : 'black',
+    //   }}>
+    
+    // <button class= "darkModeButton" onClick={() => setDarkMode(!darkMode)}> Toggle Dark Mode</button>
+    // </div>
+
+    
   )
 }
 
